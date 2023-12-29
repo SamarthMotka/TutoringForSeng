@@ -14,6 +14,10 @@ body{
 
 
 /* ----------------------------------------------Header------------------------------------------------------------------------------------- */
+.container{
+    width: 100%;
+    height: 100%;
+}
 
 .header{
     background: #1f2937;
@@ -28,16 +32,20 @@ body{
 }
 .header .navbar p{
     color: white;
-    margin-left: 1rem;
+    margin-left: 15px;
 }
+.links-div{
+    width: 100%;
+}
+
 .links{
     display: flex;
     flex-direction: row;
-    padding-left: 65%;
+    float: right;
     list-style: none;
 }
 .links li{
-    padding-right: 1rem;
+    padding-right: 20px;
     color: white;
 }
 
@@ -45,17 +53,25 @@ body{
 
 
 .hero{
+    width: 100%;
+    height:350px;
     display: flex;
     flex-direction: row;
     background: #1f2937;
 }
-.hero .first{
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.hero .first-content{
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     justify-content:center;
-    padding-left: 20%;
+
     
 }
 .hero .first .btn{
@@ -66,20 +82,21 @@ body{
     border: none;
 }
 .hero .second{
-    width: 50%;
     display: flex;
-    padding-right: 20%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    /* padding-right: 20%; */
+    /* margin-top: 2rem; */
+    /* margin-bottom: 2rem; */
 }
 .hero .second img{
-    height: 250px;
-    width: 30rem;
-    padding-left: 15rem;
+    height: 70%;
+    width: 100%;
+    /* padding-left: 15rem;
     margin-left: 7rem;
     margin-left: 0;
-    padding-left: 8rem;
-    padding-bottom: 1rem;
+    padding-left: 8rem; */
 }
 .hero .first h1{
     margin-bottom: 0;
@@ -125,10 +142,49 @@ body{
     font-size: 14px;
     margin-top: 7px;
 }
+
+@media (max-width:600px) {
+    .random{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+    .random .randomContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .random .randomContainer .boxes{
+        display: flex;
+        flex-direction: column;
+        
+        /* margin: 1rem; */
+        /* height: 40%; */
+        width: 40%;
+
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    .random .randomContainer .boxes .square{
+        /* width: 6rem; */
+        /* height: 15rem; */
+        border: 2px solid blue;
+        border-radius: 6px;
+        align-items:center;
+        justify-content: center;
+    }
+    .random .randomContainer .boxes  p{
+        font-size: 14px;
+        margin-top: 7px;
+    }
+}
 .quote{
     background: rgb(215, 215, 215);
     width: 100%;
-    height: 15rem;
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,14 +195,15 @@ body{
     display: block;
     text-wrap: wrap;
     width: 50%;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 50px auto;
+    /* margin-top: 0;
+    margin-bottom: 0; */
 }
 .quote .testimonial p{
-    padding: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    /* padding: 2rem; *
+    /* margin-top: 0; */
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
     font-size: 1.3rem;
 }
 
@@ -162,16 +219,21 @@ body{
 }
 .action{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content:center;
     width: 60%;
-    height: 35%;
+    /* height: 35%; */
     border-radius: 4px;
     background: rgba(59,130,246,255);
 }
 .content{
     color: white;
-    padding-right: 2rem;
-    margin-top: 1rem;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    /* padding-right: 2rem;
+    margin-top: 1rem; */
 }
 .content h4{
     margin-bottom: 0;
@@ -181,8 +243,8 @@ body{
     font-size: 12px;
 }
 .signup{
-    justify-self: end;
-    margin-left: 4rem;
+    justify-self: center;
+    /* margin-left: 4rem; */
 }
 .signup button{
     font-family: 'Open Sans';
@@ -190,11 +252,15 @@ body{
     color: white;
     border-radius: 3px;
     border: 2px solid white;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
 }
 .footer{
     background: #1f2937;
     display: flex;
     justify-content: center;
     color: white;
+}
+
+@media (max-width:1200px) {
+    
 }
